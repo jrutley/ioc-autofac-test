@@ -20,7 +20,7 @@ namespace iocTest.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<string>>> Get()
         {
-            var foo = await service.CallAPage("https://www.google.com");
+            var foo = await service.CallAPage();
             return new string[] { foo };
         }
 
